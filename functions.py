@@ -42,6 +42,9 @@ def eng():
     return final
 def date():
     date_string = input("Enter the date: ")
+    if date_string == "":
+        date_string = date()
+    date_string = f"*{date_string}*"
     return date_string
 def additional():
     additional = input("Tell any additional details needed: ")
