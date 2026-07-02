@@ -1,3 +1,4 @@
+import datetime
 import functions
 # Code to use the functions declared into formatting the hw for WhatsApp
 subjects = [
@@ -13,8 +14,8 @@ subjects = [
 
 results = []
 
-date = functions.date()
-results.append(f"*Homework*\n{date}")
+date = datetime.datetime.now().strftime("%d-%m-%Y")
+results.append(f"*Homework*\n\n{functions.text_bold(date)}")
 
 for func in subjects:
     result = func()
