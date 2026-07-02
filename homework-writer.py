@@ -15,7 +15,7 @@ subjects = [
 results = []
 
 date = datetime.datetime.now().strftime("%d-%m-%Y")
-results.append(f"*Homework*\n\n{functions.text_bold(date)}")
+results.append(f"*Homework*\n\n{functions.text_bold(date)}\n")
 
 for func in subjects:
     result = func()
